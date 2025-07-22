@@ -44,10 +44,10 @@ namespace JwtAspNet.Services
             var ci = new ClaimsIdentity();
 
             //Tipos especiais
-            ci.AddClaim(new Claim("Id", user.Id.ToString()));
+            ci.AddClaim(new Claim("id", user.Id.ToString()));
             ci.AddClaim(new Claim(ClaimTypes.Name, user.Name));
             ci.AddClaim(new Claim(ClaimTypes.Email, user.Email));
-            ci.AddClaim(new Claim("Image", user.Image));
+            ci.AddClaim(new Claim("image", user.Image));
 
             foreach(var role in user.Roles)
             {

@@ -42,3 +42,4 @@ C:\Users\leand\Desktop\Projetos\New folder\JwtAspNet\JwtAspNet\obj\Debug\net8.0\
 C:\Users\leand\Desktop\Projetos\New folder\JwtAspNet\JwtAspNet\obj\Debug\net8.0\JwtAspNet.pdb
 C:\Users\leand\Desktop\Projetos\New folder\JwtAspNet\JwtAspNet\obj\Debug\net8.0\JwtAspNet.genruntimeconfig.cache
 C:\Users\leand\Desktop\Projetos\New folder\JwtAspNet\JwtAspNet\obj\Debug\net8.0\ref\JwtAspNet.dll
+C:\Users\leand\Desktop\Projetos\New folder\JwtAspNet\JwtAspNet\obj\Debug\net8.0\JwtAspNet.sourcelink.json

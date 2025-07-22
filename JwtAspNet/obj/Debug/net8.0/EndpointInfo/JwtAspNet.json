@@ -33,6 +33,25 @@
           "200": {
             "description": "OK",
             "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32StringStringString<>f__AnonymousType0"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin": {
+      "get": {
+        "tags": [
+          "JwtAspNet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
               "text/plain": {
                 "schema": {
                   "type": "string"
@@ -44,5 +63,43 @@
       }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "Int32StringStringString<>f__AnonymousType0": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Insira 'Bearer' [espaço] e então seu token no campo abaixo.\n\nExemplo: 'Bearer 12345abcdef'",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }
